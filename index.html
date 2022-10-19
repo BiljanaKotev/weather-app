@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Gantari:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c7b23fc763.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="left-container">
+        <form id="form-submit">
+          <i class="fa-solid magnifying-glass fa-magnifying-glass"></i>
+          <input
+            id="search-input"
+            class="search-bar"
+            type="text"
+            placeholder="Enter Your City"
+          />
+        </form>
+        <h1 id="city-name">Ohrid</h1>
+        <p id="degrees-celsius" class="temp left-container-temp">20°C</p>
+        <span id="degrees-farenheit" class="temp left-container-temp"
+          >65°F</span
+        >
+        <p id="date-time" class="date-time">Monday 16:00</p>
+        <img
+          class="left-img"
+          src="images/cloudy-rainy.png"
+          alt="rain cloud"
+          width="75px"
+        />
+        <p class="forecast">Mostly Cloudy</p>
+        <img
+          class="cloudy-icon"
+          src="images/mostly-cloudy.png"
+          alt="mostly cloudy icon"
+        />
+        <!-- <p class="forecast forecast-percent">Rain-30%</p>
+     <img class="raindrop-icon" src="images/rain-drop-1.png" alt="rain drop icon">  -->
+      </div>
+      <div class="days">
+        <p class="date">Tue</p>
+        <div class="box">
+          <p class="temp">20°C</p>
+          <span>65°F</span>
+          <img
+            class="weather-icon tues-icon"
+            src="images/cloudy.png"
+            alt="rain cloud icon"
+          />
+          <p class="forecast tues-forecast">Partly Cloudy</p>
+        </div>
+      </div>
+      <div class="days">
+        <p class="date">Wed</p>
+        <div class="box">
+          <p class="temp">20°C</p>
+          <span>65°F</span>
+          <img
+            class="weather-icon sunny-icon"
+            src="images/sun-2.png"
+            alt="sunny icon"
+          />
+          <p class="forecast">Sunny</p>
+        </div>
+      </div>
+      <div class="days">
+        <p class="date">Thur</p>
+        <div class="box">
+          <p class="temp">20°C</p>
+          <span>15°F</span>
+          <img
+            class="weather-icon sunny-icon"
+            src="images/sun-2.png"
+            alt="sunny icon"
+          />
+          <p class="forecast">Sunny</p>
+        </div>
+      </div>
+      <div class="days">
+        <p class="date">Fri</p>
+        <div class="box">
+          <p class="temp">20°C</p>
+          <span>65°F</span>
+          <img
+            class="weather-icon"
+            src="images/rainy-cloudy.png"
+            alt="sunny icon"
+          />
+          <p class="forecast fri-forecast">Rainy</p>
+        </div>
+      </div>
+      <div class="days">
+        <p class="date">Sat</p>
+        <div class="box">
+          <p class="temp">20°C</p>
+          <span>65°F</span>
+
+          <img
+            class="weather-icon"
+            src="images/cloudy-rainy.png"
+            alt="sun with clouds icon"
+          />
+
+          <p class="forecast sat-forecast">Mostly Cloudy</p>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
