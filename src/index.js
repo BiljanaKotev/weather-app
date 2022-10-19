@@ -37,7 +37,3 @@ function getWeather(response) {
   inputCity.innerhtml = `{temp}`;
 }
 
-let city = "ohrid";
-let apiKey = "eea209ee0d6a3cd574fa3023128ed03a";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(getWeather);
