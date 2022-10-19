@@ -119,3 +119,7 @@ div .days {
 .sat-forecast {
   margin-top: 40px;
 }
+
+.code-link {
+  text-decoration: none;
+}
